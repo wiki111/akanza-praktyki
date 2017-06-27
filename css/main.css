@@ -17,30 +17,55 @@ body{
 }
 
 .symbol{
-    position: absolute;
-    top: 100px;
-    right: 450px;
-    z-index: 1;
+    float: right;
+    width: 100%;
+    height: auto;
 }
+
+.symbol-container{
+    position: relative;
+    z-index: 1;
+    float: right;
+    width: 7%;
+    height: 100;
+    margin: 5% 25% 0 0;
+}
+
+.sygnet-container{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    z-index: 1;
+    width: 3%;
+    vertical-align: middle;
+}
+
 
 .header {
     position: absolute;
     width: 100%;
-    margin: 5% 0 0 5%;
+    max-height: 75px;
+    margin: 5% 0 5% 5%;
 }
 
-.header object{
-    float: left;
-    margin-right: 1%;
-}
+/* 
+    .header object{
+        float: left;
+        margin-right: 1%;
+    } 
+*/
 
 .header h3{
+    position: absolute;
+    margin-left: 120%;
     font-weight: normal;
+    font-size: 1vw;
+    vertical-align: middle;
 }
 
 .main-text{
     position: absolute;
-    top: 200px;
+    margin-top: 12%;
     left: 5%;
     z-index: 1;
     width: 40%;
@@ -57,22 +82,23 @@ body{
 
 .red, .normal{
     font-weight: normal;
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 .description{
-    font-size: 1em;
+    margin-top: 6%;
+    font-size: 1vw;
 }
 
 .contact-info{
     position: absolute;
-    top: 400px;
+    margin-top: 27%;
     left: 5%;
     z-index: 1;
 }
 
 .phone_number{
-    font-size: 3em;
+    font-size: 3vw;
     font-weight: 700;
     color: red;
     margin: 0;
@@ -80,7 +106,7 @@ body{
 
 
 .mail{
-    font-size: 2em;
+    font-size: 2vw;
     font-weight: 300;
     margin-top: -5%;
 }
