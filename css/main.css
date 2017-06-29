@@ -2,18 +2,32 @@ body{
     margin: 0;
     font-family: "Open Sans";
     background: #eaecdf;
+    width: 96.238%;
 }
 
 
 .container{
-    width: 54.2544%;
+    width: 56.2544%;
     position: relative;
+    margin: auto;
+    
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+}
+
+.bg img{
+    width: 177.6846%;
+    margin-left: -39.3%;
+    margin-top: -7.5%;
 }
 
 .big-icon-container{
     position: absolute;
     float: right;
-    width: 17.2283%;
+    width: 17.3228%;
     top: 0;
     right: 0;
 }
@@ -32,7 +46,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    width: 23.2125%;
+    width: 23.4330%;
 }
 
 .small-icon-container{
@@ -51,8 +65,9 @@ body{
 
 
 .main-text{
-    width: 40%;
-    height: 40%;
+    position: absolute;
+    width: 44.1259%;
+    margin-top: 10.7874%;
 }
 
 .red{
@@ -70,50 +85,75 @@ body{
     font-size: 0.85vw;
     font-weight: 300;
     line-height: 170%;
+    margin-top: 9%;
 }
 
 .contact-info{
-    height: 27%;
+    position: absolute;
+    margin-top: 33.3%;
 }
 
 .phone_number{
     font-size: 2.18vw;
     font-weight: 700;
     color: #e94e4a;
+    margin-bottom: 0;
 }
 
 
 .mail{
     font-size: 1.45vw;
     font-weight: 300;
+    margin-top: -4%;
 }
 
 .features{
-    display: flex;
-    justify-content: space-between;
-    width: 27.15%;
-    height: 27%;
+    position: absolute;
+    width: 100%;
+    margin-top: 48%;
 }
 
 .icon{
     position: relative;
-    width: 100%;
+    display: inline-block;
+    width: 12.7614%;
     text-align: center;
-    font-size: 0.8vw
+    font-size: 0.75vw;
 }
 
-.icon img{
-    width: 45.2%;
-    height: auto;
+.icon-shield{
+    margin-left: 3.5%;
+    margin-right: 2.5%;
+}
+
+.icon-img-cat{
+    max-width: 60.4477%;
+}
+
+
+.icon-img-shield{
+    max-width: 62.8205%;
+}
+
+.icon-img-wind{
+    max-width: 51.4705%;
+}
+
+.wider{
+    width: 14.5614%;
 }
 
 .feature-desc{
+    position: absolute;
     font-weight: 300;
     font-size: 0.73vw;
     line-height: 120%;
+    margin-top: 5%;
 }
 
 .footer{
+    position: absolute;
+    margin-top: 69%;
     font-size: 0.6835vw;
 }
 
