@@ -1,159 +1,173 @@
 body{
     margin: 0;
-    font-family: "Open Sans";
-    background: #eaecdf;
-    width: 96.238%;
-}
-
-
-.container{
-    width: 56.2544%;
-    position: relative;
-    margin: auto;
-    
-}
-
-.bg{
-    position: absolute;
-    width: 100%;
-}
-
-.bg img{
-    width: 177.6846%;
-    margin-left: -39.3%;
-    margin-top: -7.5%;
-}
-
-.big-icon-container{
-    position: absolute;
-    float: right;
-    width: 17.3228%;
-    top: 0;
-    right: 0;
-}
-
-.wrap{
-    width: 100%;
-}
-
-.resize{
-    max-width: 100%;
-    height: auto;
-}
-
-
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 23.4330%;
-}
-
-.small-icon-container{
-    display: flex;
-    align-items: center;
-    width: 25.9158%;
-}
-
-.text{
-    margin-left: 13%;
-    margin-top: -13%;
+    padding-top: 48px;
+    background-image: url("../images/bg.png");
+    background-color: #eaecdf;
+    background-repeat: no-repeat;
+    background-position: center top;
+    color:#354e5a; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     font-weight: 300;
-    font-size: 0.85vw;
+    height: 100%;
+    width: 100%;
 }
 
+#container{
+    max-width: 900px;
+    margin: auto;
+    padding: 15px;
+}
 
+#big-icon-container{
+    float: right; 
+}
 
-.main-text{
-    position: absolute;
-    width: 44.1259%;
-    margin-top: 10.7874%;
+#header{
+    float: left;
+}
+
+#logo{
+    float: left;
+    width: 53px;
+    height: 69px;
+}
+
+#text{
+    margin-top: 22px;
+    margin-left: 63px;
+}
+
+#title{
+    font-weight: 300;
+    font-size: 24px; 
+    margin-bottom: 35px;
+    clear: both;
+    margin-top: 73px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
 }
 
 .red{
     color: #e94e4a;
+}
+
+#main-text{
+    float: left;
+    line-height: 27px;
+    clear: both;
+}
+
+#description{
+    line-height: 23px;
+    letter-spacing: 0.14px;
     margin: 0;
 }
+    
 
-.title{
-    font-weight: 300;
-    font-size: 1.455vw;
-    line-height: 100%;
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
-.description{
-    font-size: 0.85vw;
-    font-weight: 300;
-    line-height: 170%;
-    margin-top: 9%;
+#contact-info{
+    clear: both;
+    font-size: 36px;
+    line-height: 0px;
+    padding-top: 10px;
 }
 
-.contact-info{
-    position: absolute;
-    margin-top: 33.3%;
-}
-
-.phone_number{
-    font-size: 2.18vw;
+#phone_number{
+    font-size: 36px;
     font-weight: 700;
-    color: #e94e4a;
     margin-bottom: 0;
 }
 
-
-.mail{
-    font-size: 1.45vw;
-    font-weight: 300;
-    margin-top: -4%;
+#mail{
+    font-size: 24px;
+    letter-spacing: 0.1px;
 }
 
-.features{
-    position: absolute;
-    width: 100%;
-    margin-top: 48%;
+#features{
+    clear: both;
+    padding-top: 22px;
 }
 
 .icon{
-    position: relative;
-    display: inline-block;
-    width: 12.7614%;
+    float: left;
     text-align: center;
-    font-size: 0.75vw;
-}
-
-.icon-shield{
-    margin-left: 3.5%;
-    margin-right: 2.5%;
-}
-
-.icon-img-cat{
-    max-width: 60.4477%;
-}
-
-
-.icon-img-shield{
-    max-width: 62.8205%;
-}
-
-.icon-img-wind{
-    max-width: 51.4705%;
-}
-
-.wider{
-    width: 14.5614%;
+    line-height: 12px;
 }
 
 .feature-desc{
-    position: absolute;
-    font-weight: 300;
-    font-size: 0.73vw;
-    line-height: 120%;
-    margin-top: 5%;
+    font-size: 12px;
 }
 
-.footer{
-    position: absolute;
-    margin-top: 69%;
-    font-size: 0.6835vw;
+#cat-icon{
+    margin-right: 42px;
 }
 
+#shield-icon{
+    margin-right: 33px;
+}
+
+#footer{
+    float: left;
+    font-size: 12px;
+    clear: both;
+    padding-top: 62px;
+}
+
+@media only screen 
+and (max-width : 900px){
+    
+    
+    body {
+        background-image: none;
+    }
+    
+}
+
+@media only screen 
+and (max-width : 500px){
+    
+    
+    body {
+        background-image: none;
+    }
+    
+    #big-icon-container{
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+    
+    #header{
+        margin: auto;
+        float: none;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    #logo{
+        margin: auto;
+        float: none;
+    }
+    
+    #text{
+        margin: auto;
+    }
+    
+    #main-text, #contact-info, #feature, .icon{
+        margin: auto;
+        text-align: center;
+    }
+    
+    .icon{
+        float: none;
+    }
+    
+    #cat-icon, #shield-icon{
+        margin: 0;
+    }
+}
