@@ -12,62 +12,52 @@ body{
     height: 100%;
     width: 100%;
 }
-#container{
+section{
     max-width: 900px;
     margin: auto;
     padding: 15px;
 }
-#big-icon-container{
+#big-logo-container{
     float: right; 
 }
-#header{
-    float: left;
-}
-#logo{
-    float: left;
+header object{
     width: 53px;
     height: 69px;
 }
-#text{
+header p{
     margin-top: 22px;
     margin-left: 63px;
 }
-#title{
+h1{
     font-weight: 300;
     font-size: 24px; 
     margin-bottom: 35px;
-    clear: both;
     margin-top: 73px;
     line-height: 24px;
     letter-spacing: 0.2px;
 }
-.red{
+h1::first-line{
     color: #e94e4a;
 }
 #main-text{
-    float: left;
     line-height: 27px;
-    clear: both;
+    padding-bottom: 30px;
 }
-#description{
+#main-text p{
     line-height: 23px;
     letter-spacing: 0.14px;
     margin: 0;
 }
 #contact-info{
-    clear: both;
-    font-size: 36px;
-    line-height: 0px;
-    padding-top: 10px;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    line-height: 28.5px;
 }
-#phone_number{
+#contact-info::first-line{
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 0;
-}
-#mail{
-    font-size: 24px;
-    letter-spacing: 0.1px;
+    color: #e94e4a;
 }
 a {
     color: inherit;
@@ -77,29 +67,31 @@ a:hover{
     text-shadow: 1px 1px rgba(74, 53, 90,0.2);
 }
 #features{
-    clear: both;
-    padding-top: 22px;
+    padding-top: 5px;
 }
-.icon{
-    float: left;
+#features div{
     text-align: center;
     line-height: 12px;
 }
 #cat-icon{
     margin-right: 42px;
 }
-.feature-desc{
+#features div p{
     font-size: 12px;
 }
 #shield-icon{
     margin-right: 33px;
 }
-#footer{
-    float: left;
+footer{
     font-size: 12px;
-    clear: both;
     padding-top: 62px;
 }
+footer, #features div, #main-text, header object, header{
+    float: left;
+}
+footer, #features, #contact-info, #main-text, h1{
+    clear: both;
+} 
 
 @media only screen 
 and (max-width : 900px){
@@ -113,30 +105,23 @@ and (max-width : 500px){
     body {
         background-image: none;
     }
-    #big-icon-container{
-        margin: auto;
-        float: none;
-        text-align: center;
-    }
-    #header{
-        margin: auto;
-        float: none;
-        text-align: center;
+    header{
         padding-top: 30px;
     }
-    #logo{
-        margin: auto;
+    header, #big-logo-container, #features div, header object{
         float: none;
     }
-    #text{
+    header p{
         margin: auto;
     }
-    #main-text, #contact-info, #feature, .icon{
-        margin: auto;
+    #main-text{
+        width: 100%;
+    }
+    #main-text p{
+        display: inline-block;
+    }
+    section {
         text-align: center;
-    }
-    .icon{
-        float: none;
     }
     #cat-icon, #shield-icon{
         margin: 0;
