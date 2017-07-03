@@ -27,7 +27,8 @@ function onScroll(event){
     $('#menu ul li a').each(function() {
        var currentLink = $(this);
        var referenceElement = $(currentLink.attr("href"));
-       var top = referenceElement.position().top - 200;
+       var top = referenceElement.offset().top;
+       var top = top - 100;
        if ( top <= currentPosition) {
             $('#menu ul li a').removeClass("red");
             currentLink.addClass("red");
@@ -40,7 +41,10 @@ function onScroll(event){
 
 function scrollToDiv(div){	
     var offset = $('#'+div).offset().top;
-    var offset = offset - 80;	
+    var offset = offset - 80;
+    $('#menu ul li a').each(function(){
+       $(this).removeClass('red'); 
+    });
     $('html,body').animate({scrollTop: offset});	
     var x = document.getElementById("menu");
     if(x.className === "menu responsive"){
