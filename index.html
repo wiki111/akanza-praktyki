@@ -1,83 +1,86 @@
 <!doctype html>
 <html>
-	<head>
-		<link rel="stylesheet" href="/css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
+    <head>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700&amp;subset=latin-ext" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
-	    <nav>
-	        <div id="menu">
-	            <img src="images/logo.png" alt="odkomarzanie.lublin.pl">
-	            <p>odkomarzanie.lublin.pl</p>
+        <title>Odkomarzanie Lublin</title>
+    </head>
+    <body>
+        <nav>
+            <div id="menu">
+                <img src="images/logo.png" id="logo" alt="odkomarzanie.lublin.pl">
+                <p>odkomarzanie.lublin.pl</p>
                 <ul>
-                    <li class="red">Start</li>
-                    <li>Oferta abonamentowa</li>
-                    <li>Ważne informacje</li>
-                    <li>Referencje</li>
-                    <li>Kontakt</li>
+                    <li class="red"><a href="#" id="start" >Start</a></li>
+                    <li><a href="#section-1" onclick="scrollToDiv('section-1');" >Oferta abonamentowa</a></li>
+                    <li><a href="#section-2" onclick="scrollToDiv('section-2');" >Ważne informacje</a></li>
+                    <li><a href="#section-3" onclick="scrollToDiv('section-3');" >Referencje</a></li>
+                    <li><a href="#section-4" onclick="scrollToDiv('section-4');" >Kontakt</a></li>
                 </ul>
-                <div class="icon" onclick="showMenu()">
-                    <img src="images/nav_icon.png">
+                <div id="icon" onclick="showMenu()">
+                    <img src="images/nav_icon.png" alt="Menu">
                 </div>
-	        </div>
-	    </nav>
-	    <header>
-	        <div>
-	            <h1>
-	                <span class="red">Skutecznie pozbywamy się </span><wbr>
-	                komarów meszek i kleszczy
-	            </h1>
-	            <p>
+            </div>
+        </nav>
+        <header>
+            <div>
+                <h1>
+                    <span class="red">Skutecznie pozbywamy się </span><wbr>
+                    komarów meszek i kleszczy
+                </h1>
+                <p>
                 Specjalizujemy się w odkomarzaniu terenów mieszkalnych, komercyjnych i rekreacyjnych. Stosujemy wyłącznie bezpieczne<br>
-	            dla zdrowia ludzi i zwierząt domowych środki. Wykorzystujemy produkty nieszkodliwe dla środowiska. <br>
-	            Ceny jednorazowego oprysku zaczynają się już od 150 zł i są zależne od powierzchni działki.<br>
-	            </p>
-	        </div>
-	    </header>
-	    <div class="section">
-	        <div class="divider">
-	            Oferta Abonamentowa
-	        </div>
-	        <div class="content">
-	            <h2>Oferta abonamentowa</h2>
-	            <div class="feature_one">
-	                <div class="img_wrap red">
-	                    <img src="images/icon2.png">    
-	                    Gwarancja
-	                </div>
-	                <ul class="red">
-	                    <li><span class="dark">Gwarancja całosezonowej opieki przeciw komarowej.</span></li>
-	                    <li><span class="dark">Nielimitowana ilość oprysków w sezonie.</span></li>
-	                    <li><span class="dark">Gwarancja dojazdu w 72 godziny od zgłoszenia.</span></li>
-	                    <li><span class="dark">Każdorazowo dojazd gratis.</span></li>
-	                </ul>
-	            </div>
-	            <div class="feature_two">
-	                <div class="img_wrap red">
-	                    <img src="images/icon1.png">
-	                    Abonament
+                dla zdrowia ludzi i zwierząt domowych środki. Wykorzystujemy produkty nieszkodliwe dla środowiska. <br>
+                Ceny jednorazowego oprysku zaczynają się już od 150 zł i są zależne od powierzchni działki.<br>
+                </p>
+            </div>
+        </header>
+        <div class="section" id="section-1" >
+            <div class="divider" onclick="scrollToDiv('section-1');">
+                Oferta Abonamentowa
+            </div>
+            <div class="content">
+                <h2>Oferta abonamentowa</h2>
+                <div class="feature_one">
+                    <div class="img_wrap red">
+                        <img src="images/icon2.png" alt="Gwarancja">    
+                        Gwarancja
                     </div>
-	                <ul class="red">
-	                    <li><span class="dark">Umowa na okres 3 miesięcy.</span></li>
-	                    <li><span class="dark">Wysokość abonamentu zależna od powierzchni działki.</span></li>
-	                    <li><span class="dark">Ceny już od 200zł miesięcznie.</span></li>
-	                    <br>
-	                </ul>
-	            </div>
-	        </div>
-	    </div>
-	    <div class="section">
-	        <div class="divider">
-	            Ważne informacje
-	        </div>
+                    <ul class="red">
+                        <li><span class="dark">Gwarancja całosezonowej opieki przeciw komarowej.</span></li>
+                        <li><span class="dark">Nielimitowana ilość oprysków w sezonie.</span></li>
+                        <li><span class="dark">Gwarancja dojazdu w 72 godziny od zgłoszenia.</span></li>
+                        <li><span class="dark">Każdorazowo dojazd gratis.</span></li>
+                    </ul>
+                </div>
+                <div class="feature_two">
+                    <div class="img_wrap red">
+                        <img src="images/icon1.png" alt="Abonament">
+                        Abonament
+                    </div>
+                    <ul class="red">
+                        <li><span class="dark">Umowa na okres 3 miesięcy.</span></li>
+                        <li><span class="dark">Wysokość abonamentu zależna od powierzchni działki.</span></li>
+                        <li><span class="dark">Ceny już od 200zł miesięcznie.</span></li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section-2" >
+            <div class="divider"  onclick="scrollToDiv('section-2');">
+                Ważne informacje
+            </div>
             <div class="content">
                 <h2>Ważne informacje</h2>
-                <div class="feature_one feature_one_2">
+                <div class="feature_one">
                     <div class="img_wrap red">
-                        <img src="images/icon4.png">    
+                        <img src="images/icon4.png" alt="Bezpieczeństwo">    
                         Bezpieczeństwo
                     </div>
                     <p>
@@ -88,7 +91,7 @@
                 </div>
                 <div class="feature_two">
                     <div class="img_wrap red">
-                        <img src="images/icon3.png">
+                        <img src="images/icon3.png" alt="Skuteczność">
                         Skuteczność
                     </div>
                    <p>
@@ -98,14 +101,14 @@
                    </p>
                 </div>
             </div>
-	    </div>
-	    <div class="section section2">
-	        <div class="divider">
-	            Referencje
-	        </div>
-	        <div class="content ref">
+        </div>
+        <div class="section" id="section-3" >
+            <div class="divider" onclick="scrollToDiv('section-3');">
+                Referencje
+            </div>
+            <div class="content">
                 <h2 id="ref">Referencje</h2>
-                <div class="feature_one fwidth">
+                <div class="feature_one">
                    <p>
                        Miejscowość: Nasutów <br>
                        Dom Nasutów <br>
@@ -118,7 +121,7 @@
                        Paweł Kowalski
                    </p>
                 </div>
-                <div class="feature_two fwidth">
+                <div class="feature_two">
                    <p>
                        Miejscowość: Nasutów <br>
                        Dom Nasutów <br>
@@ -132,25 +135,25 @@
                    </p>
                 </div>
             </div>
-	    </div>
-	    <div class="divider last">
-	            Kontakt
         </div>
-	    <footer>
-	        <div id="footer-content">
-                <h2 id="contact">Kontakt</h2>
+        <div class="divider" id="section-4" onclick="scrollToDiv('section-4');" >
+                Kontakt
+        </div>
+        <footer>
+            <div id="footer-content">
+                <h2>Kontakt</h2>
                 <p id="footer-desc">Jeśli masz problem z komarami, meszkami lub kleszczami nie czekaj
                 , zadzwoń lub napisz.</p>
                 
                 <p id="phone" class="red">794 158 757</p>
-                <p id="mail">info@odkomarzanie.lublin.pl</p>
+                <p id="mail"><a href="mailto:info@odkomarzanie.lublin.pl">info@odkomarzanie.lublin.pl</a></p>
                 <hr>
                 <p id="cookies-info">Na naszej stronie stosujemy pliki cookies. Korzystanie ze strony 
                 bez zmiany ustawień przeglądarki <br> oznacza, że pliki cookies
                 będą zamieszczane w Twoim urządzeniu. Więcej informacji <br></p>
                 
                 <p id="copyright">Wszelkie prawa zastrzeżone. &#9400 odkomarzanie.lublin.pl</p>
-	        </div>
-	    </footer>
-	</body>
+            </div>
+        </footer>
+    </body>
 </html>
