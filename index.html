@@ -3,11 +3,13 @@
 	<head>
 		<link rel="stylesheet" href="/css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
+        <script src="js/main.js"></script>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 	    <nav>
-	        <div>
+	        <div id="menu">
 	            <img src="images/logo.png" alt="odkomarzanie.lublin.pl">
 	            <p>odkomarzanie.lublin.pl</p>
                 <ul>
@@ -17,6 +19,9 @@
                     <li>Referencje</li>
                     <li>Kontakt</li>
                 </ul>
+                <div class="icon" onclick="showMenu()">
+                    <img src="images/nav_icon.png">
+                </div>
 	        </div>
 	    </nav>
 	    <header>
@@ -38,8 +43,11 @@
 	        </div>
 	        <div class="content">
 	            <h2>Oferta abonamentowa</h2>
-	            <div class="feature">
-	                <img src="images/icon2.png">
+	            <div class="feature_one">
+	                <div class="img_wrap red">
+	                    <img src="images/icon2.png">    
+	                    Gwarancja
+	                </div>
 	                <ul class="red">
 	                    <li><span class="dark">Gwarancja całosezonowej opieki przeciw komarowej.</span></li>
 	                    <li><span class="dark">Nielimitowana ilość oprysków w sezonie.</span></li>
@@ -47,30 +55,102 @@
 	                    <li><span class="dark">Każdorazowo dojazd gratis.</span></li>
 	                </ul>
 	            </div>
-	            <div class="feature">
-	                <img src="images/icon1.png">
+	            <div class="feature_two">
+	                <div class="img_wrap red">
+	                    <img src="images/icon1.png">
+	                    Abonament
+                    </div>
 	                <ul class="red">
 	                    <li><span class="dark">Umowa na okres 3 miesięcy.</span></li>
 	                    <li><span class="dark">Wysokość abonamentu zależna od powierzchni działki.</span></li>
 	                    <li><span class="dark">Ceny już od 200zł miesięcznie.</span></li>
+	                    <br>
 	                </ul>
 	            </div>
 	        </div>
 	    </div>
 	    <div class="section">
 	        <div class="divider">
-	            Ważne
+	            Ważne informacje
 	        </div>
+            <div class="content">
+                <h2>Ważne informacje</h2>
+                <div class="feature_one feature_one_2">
+                    <div class="img_wrap red">
+                        <img src="images/icon4.png">    
+                        Bezpieczeństwo
+                    </div>
+                    <p>
+                        Stosujemy bezpieczne dla ludzi i zwierząt domowych <br>
+                        preparaty. Oprysk jest w pełni bezpieczny dla roślin <br>
+                        i środowiska.
+                    </p>
+                </div>
+                <div class="feature_two">
+                    <div class="img_wrap red">
+                        <img src="images/icon3.png">
+                        Skuteczność
+                    </div>
+                   <p>
+                       Przeciętna skuteczność oprysku wynosi od 4 do 6 tygodni. <br>
+                       Usuwamy od 90 do 95% populacji komarów, meszek <br>
+                       i kleszczy.
+                   </p>
+                </div>
+            </div>
 	    </div>
-	    <div class="section">
+	    <div class="section section2">
 	        <div class="divider">
 	            Referencje
 	        </div>
+	        <div class="content ref">
+                <h2 id="ref">Referencje</h2>
+                <div class="feature_one fwidth">
+                   <p>
+                       Miejscowość: Nasutów <br>
+                       Dom Nasutów <br>
+                       Powierzchnia oprysku: 1000 mkw <br>
+                       <br>
+                       <br>
+                       <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                       Assumenda, quisquam labore molestias consequuntur quos <br></em>
+                       <br>
+                       Paweł Kowalski
+                   </p>
+                </div>
+                <div class="feature_two fwidth">
+                   <p>
+                       Miejscowość: Nasutów <br>
+                       Dom Nasutów <br>
+                       Powierzchnia oprysku: 1000 mkw <br>
+                       <br>
+                       <br>
+                       <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                       Assumenda, quisquam labore molestias consequuntur quos </em><br>
+                       <br>
+                       Paweł Kowalski
+                   </p>
+                </div>
+            </div>
 	    </div>
-	    <div class="divider">
+	    <div class="divider last">
 	            Kontakt
         </div>
 	    <footer>
+	        <div id="footer-content">
+                <h2 id="contact">Kontakt</h2>
+                <p id="footer-desc">Jeśli masz problem z komarami, meszkami lub kleszczami nie czekaj
+                , zadzwoń lub napisz.</p>
+                
+                <p id="phone" class="red">794 158 757</p>
+                <p id="mail">info@odkomarzanie.lublin.pl</p>
+                <hr>
+                <p id="cookies-info">Na naszej stronie stosujemy pliki cookies. Korzystanie ze strony 
+                bez zmiany ustawień przeglądarki <br> oznacza, że pliki cookies
+                będą zamieszczane w Twoim urządzeniu. Więcej informacji <br></p>
+                
+                <p id="copyright">Wszelkie prawa zastrzeżone. &#9400 odkomarzanie.lublin.pl</p>
+	        </div>
 	    </footer>
 	</body>
 </html>
